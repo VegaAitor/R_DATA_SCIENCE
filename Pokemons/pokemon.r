@@ -97,7 +97,7 @@ head(poke)
 head(poke[,1:3])
 
 comparacion.poke <- poke %>% 
-  filter(Name %in% c("Bulbasaur", "Charmander", "Pikachu", "Squirtle")) %>%  
+  filter(Name %in% c("Bulbasaur", "Charmander")) %>%  
   column_to_rownames(var = "Name") %>% 
   select(HP, Attack, Defense, Sp.Atk=Sp..Atk, Sp.Def=Sp..Def, Speed)
 
@@ -182,6 +182,7 @@ poke %>% group_by(Type.2) %>% summarise(typepoke=n())
             
 poke %>% group_by(Type.1) %>% summarise(Att=mean(Attack), typepoke=n(),
                                         max.Att=max(Attack), min.Att=min(Attack))
+
 
 poke %>% filter(Type.1=="Bug") %>%  group_by(Generation) %>%
   summarise(Count=n(), Att=mean(Attack),  max.Att=max(Attack))
