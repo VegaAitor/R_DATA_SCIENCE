@@ -1,5 +1,3 @@
-# R_DATA_SCIENCE
-R Data Science Projects
-
-
-#Hello World!
+---
+title: "Magma Demo"
+output: html_document
