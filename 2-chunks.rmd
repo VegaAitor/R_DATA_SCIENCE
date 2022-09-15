@@ -1,0 +1,26 @@
+---
+title: "Magma Demo"
+output: html_document
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+``` {r}
+x = matrix(data=c(1,2,3,4),nrow = 2, ncol = 2)
+x
+```
+```{r}
+x = matrix(data=c(1,2,3,4),2,2, byrow = TRUE)
+x
+
+```
+
+```{r}
+sqrt(x)
+x^2
+```
+
+
+
